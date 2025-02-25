@@ -220,6 +220,13 @@ function apply_style_rule()
             div.x9f619.x78zum5.x1c4vz4f.x2lah0s.xdl72j9.xdt5ytf.xvue9z.x1xy6bms.xxbr6pl.xx6bls6.xbbxn1n.x1v8jjaa.xkwfhqy.x17e6fzg.x15dh256.x1t7u3xy.x1shw4ur.x6ikm8r.x10wlt62 {
                 width: 90% !important;
             } 
+
+            div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.xl56j7k.x1q0g3np.x6s0dn4.xvy4d1p.xxk0z11.x1pg5gke.x117nqv4 + div {
+                padding: 0px !important;
+            }
+            div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.xl56j7k.x1q0g3np.x6s0dn4.xvy4d1p.xxk0z11.x1pg5gke.x117nqv4 {
+                padding: 0px !important;
+            } 
         }
     `;
 
@@ -305,7 +312,7 @@ function addBackButton() {
     const backButton = document.createElement('div');
     backButton.setAttribute("role", "button");
     backButton.setAttribute("tabindex", "0");
-    backButton.setAttribute("aria-label", "Back");
+    backButton.setAttribute("aria-label", "Return");
     backButton.classList.add("back_button"); // Added class name
     // Create the back button icon (SVG)
     const iconContainer = document.createElement('span');
@@ -336,8 +343,35 @@ function addBackButton() {
     console.log("addBackButton~~~~~~~~~~~~~~~~~~~~~END~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 }
 
+
+function backToHome(label)
+{
+    const clickedButtons = new Set(); // Store already clicked buttons
+
+    const interval = setInterval(() => {
+        const buttons = document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]');
+        console.log("Buttons found: ", buttons);
+
+        let newClick = false; // Track if any new button was clicked
+
+        buttons.forEach(button => {
+            if (!clickedButtons.has(button)) { // Check if the button was not clicked before
+                button.dispatchEvent(new Event('click', { bubbles: true }));
+                clickedButtons.add(button); // Mark button as clicked
+                newClick = true;
+            }
+        });
+
+        // Stop the interval if no new buttons were clicked
+        if (!newClick) {
+            clearInterval(interval);
+            console.log("No new 'Back' or 'Close' buttons found. Stopping interval.");
+        }
+    }, 1); // Runs every 1 second
+}
+
 let last_event_click = {};
-const RETRY_COUNT = 5;
+const RETRY_COUNT = 2;
 function list_item_event_listener() {
 
     document.addEventListener("click", function(event) {
@@ -367,10 +401,8 @@ function list_item_event_listener() {
             const label = button.getAttribute("aria-label");           
 
             const buttonActions = {
-                "Chats": () => {
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                "Chats": () => {                    
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Chats"]');
                     if (btn) {
@@ -380,10 +412,8 @@ function list_item_event_listener() {
                     console.log("Chats clicked ^^^^^^^^^^^^^^^^^^^^^^^");
                     openUserList();
                 },
-                "Status": () => {   
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                "Status": () => {                       
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Status"]');
                     if (btn) {
@@ -394,9 +424,7 @@ function list_item_event_listener() {
                     openUserList();
                 },
                 "Channels": () => {
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Channels"]');
                     if (btn) {
@@ -407,9 +435,7 @@ function list_item_event_listener() {
                     openUserList();
                 },
                 "Communities": () => {
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Communities"]');
                     if (btn) {
@@ -420,9 +446,7 @@ function list_item_event_listener() {
                     openUserList();
                 },
                 "Meta AI": () => {
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Meta AI"]');
                     if (btn) {
@@ -433,10 +457,7 @@ function list_item_event_listener() {
                     openChat();
                 },
                 "Settings": () => {
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        // button.dispatchEvent(new Event('click', { bubbles: true }));
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Settings"]');
                     if (btn) {
@@ -447,9 +468,7 @@ function list_item_event_listener() {
                     openUserList();
                 },
                 "Profile": () => {
-                    document.querySelectorAll('[role="button"][aria-label="Back"], [role="button"][aria-label="Close"]').forEach(button => {
-                        button.dispatchEvent(new Event('click', { bubbles: true }));
-                    });
+                    backToHome(label);
 
                     const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Profile"]');
                     if (btn) {
@@ -457,6 +476,17 @@ function list_item_event_listener() {
                         console.log("Triggered click event on 'Profile' button.");
                     }
                     console.log("Profile clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                    openUserList();
+                },
+                "BETA": () => {
+                    backToHome(label);
+
+                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="BETA"]');
+                    if (btn) {
+                        btn.dispatchEvent(new Event('click', { bubbles: true }));
+                        console.log("Triggered click event on 'BETA' button.");
+                    }
+                    console.log("BETA clicked ^^^^^^^^^^^^^^^^^^^^^^^");
                     openUserList();
                 }
             };
