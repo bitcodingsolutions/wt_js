@@ -53,13 +53,6 @@ function apply_style_rule()
                 max-width: 100% !important;
             }
 
-            // Chat
-            div._amk4._amkm + div {
-               width: 80% !important;
-            }
-            div._amk4._amkm {
-               width: 80% !important;
-            }
             // pdf community chat
             div.x9f619.x1u9i22x.xjcl138.x1gwem2t.x1idk2jd.x1yuel0x + div {
                 width: auto !important;
@@ -69,15 +62,6 @@ function apply_style_rule()
             }
                 
             
-            // video link chat
-            
-            div._amk4._aml5 + div {
-               width: 80% !important;
-            }
-            div._amk4._aml5 {
-               width: 80% !important;
-            }
-                 
             // reaction chat
             
             div._ak4w._ak51 + div {
@@ -89,22 +73,134 @@ function apply_style_rule()
                 left: var(--navbar-width) !important;
             }     
             
+            // div._amk4 + div {
+            //    width: 70% !important;
+            // }
+            // div._amk4 {
+            //    width: 70% !important;
+            // }
+ 
+            // div._aml8._aml9 + div {
+            //    zoom: 0.46 !important;
+            // }
+            // div._aml8._aml9 {
+            //    zoom: 0.46 !important;
+            // }
+ 
+            // div.message-in.focusable-list-item._amjy._amjz._amjv._aotl._amjw._amj- + div {
+            //    width: 96.5% !important;
+            // }
+            // div.message-in.focusable-list-item._amjy._amjz._amjv._aotl._amjw._amj- {
+            //    width: 96.5% !important;
+            // }
             
-            // community chat
+            // // Chat
+            // div._amk4._amkm + div {
+            //    width: 80% !important;
+            // }
+            // div._amk4._amkm {
+            //    width: 80% !important;
+            // }
+
+            // // video link chat
             
-            div._amk4._amkm._amk5 + div {
-               width: 80% !important;
-            }
-            div._amk4._amkm._amk5 {
-               width: 80% !important;
-            }
+            // div._amk4._aml5 + div {
+            //    width: 80% !important;
+            // }
+            // div._amk4._aml5 {
+            //    width: 80% !important;
+            // }
+                 
+
+            // // audio bot chat chat
             
-            div._amk4._amkd + div {
-               width: 80% !important;
-            }
-            div._amk4._amkd {
-               width: 80% !important;
-            }
+            // div._amk4._amkq + div {
+            //    width: 70% !important;
+            // }
+            // div._amk4._amkq {
+            //    width: 70% !important;
+            // }
+            
+            
+            // // recharge bot chat chat
+            
+            // div._amk4._amku + div {
+            //    width: 70% !important;
+            // }
+            // div._amk4._amku {
+            //    width: 70% !important;
+            // }
+            
+            
+            // // recharge bot chat chat
+            
+            // div._amk4._amk5 + div {
+            //    width: 80% !important;
+            // }
+            // div._amk4._amk5 {
+            //    width: 80% !important;
+            // }
+            
+            // // community chat
+            
+            // div._amk4._amkm._amk5 + div {
+            //    width: 80% !important;
+            // }
+            // div._amk4._amkm._amk5 {
+            //    width: 80% !important;
+            // }
+            
+            // div._amk4._amkd + div {
+            //    width: 80% !important;
+            // }
+            // div._amk4._amkd {
+            //    width: 80% !important;
+            // }
+            
+            
+            // div._amk4._amkt + div {
+            //     width: 70% !important;
+            // }
+            // div._amk4._amkt {
+            //     width: 70% !important;
+            // }
+
+            // div._amk4._amkv + div {
+            //    width: 80% !important;
+            // }
+            // div._amk4._amkv {
+            //    width: 80% !important;
+            // }
+
+            // // youtube link
+            // div._amk4._aml6 + div {
+            //     width: 70% !important;
+            // }
+            // div._amk4._aml6 {
+            //     width: 70% !important;
+            // }
+
+            // div._amk4._amkd._amlv + div {
+            //     width: 70% !important;
+            // }
+            // div._amk4._amkd._amlv {
+            //     width: 70% !important;
+            // }
+
+            // div._amk4._amkd._amkj._amk5 + div {
+            //     width: auto !important;
+            // }
+            // div._amk4._amkd._amkj._amk5 {
+            //     width: auto !important;
+            // }
+
+            // // contact share in chat
+            // div._amk4._amks._amk5 + div {
+            //     width: 90% !important;
+            // }
+            // div._amk4._amks._amk5 {
+            //     width: 80% !important;
+            // } 
             
             div.x9f619.x1hx0egp.x1yuel0x.x1yrsyyn.x1sxyh0.xwib8y2.xohu8s8 + div {
                 width: auto !important;
@@ -112,28 +208,7 @@ function apply_style_rule()
             div.x9f619.x1hx0egp.x1yuel0x.x1yrsyyn.x1sxyh0.xwib8y2.xohu8s8 {
                 width: auto !important;
             }
-            
-            div._amk4._amkt + div {
-                width: 70% !important;
-            }
-            div._amk4._amkt {
-                width: 70% !important;
-            }
 
-            div._amk4._amkv + div {
-               width: 80% !important;
-            }
-            div._amk4._amkv {
-               width: 80% !important;
-            }
-
-            // youtube link
-            div._amk4._aml6 + div {
-                width: 70% !important;
-            }
-            div._amk4._aml6 {
-                width: 70% !important;
-            }
             div.x9f619.x1hx0egp.x1yuel0x.x1yrsyyn.x1ct7el4.x1dm7udd.xwib8y2 + div {
                 width: auto !important;
             }
@@ -149,24 +224,11 @@ function apply_style_rule()
                 width: 80% !important;
             }
 
-            div._amk4._amkd._amlv + div {
-                width: 70% !important;
-            }
-            div._amk4._amkd._amlv {
-                width: 70% !important;
-            }
 
             div.x9f619.x1hx0egp.x1yuel0x.x1yrsyyn.xpr8y4f.x18d9i69.x1yzk5dy + div {
                 width: auto !important;
             }
             div.x9f619.x1hx0egp.x1yuel0x.x1yrsyyn.xpr8y4f.x18d9i69.x1yzk5dy {
-                width: auto !important;
-            }
-
-            div._amk4._amkd._amkj._amk5 + div {
-                width: auto !important;
-            }
-            div._amk4._amkd._amkj._amk5 {
                 width: auto !important;
             }
 
@@ -192,13 +254,6 @@ function apply_style_rule()
                 min-width: auto !important;
             }
 
-            // contact share in chat
-            div._amk4._amks._amk5 + div {
-                width: 90% !important;
-            }
-            div._amk4._amks._amk5 {
-                width: 80% !important;
-            } 
 
             div._ahyv.copyable-text + div {
                 width: auto !important;
@@ -234,6 +289,86 @@ function apply_style_rule()
             div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.xl56j7k.x1q0g3np.x6s0dn4.xvy4d1p.xxk0z11 {
                 padding: 0px !important;
             } 
+
+
+            // image gallary more than 4 images
+            div._amk4 + div {
+               width: 70% !important;
+            }
+            div._amk4 {
+               width: 70% !important;
+            }
+
+                        
+            div.xh8yej3.x1qftm1w.xt7dq6l + div {
+               zoom: 50% !important;
+            }
+            div.xh8yej3.x1qftm1w.xt7dq6l {
+               zoom: 50% !important;
+            }
+
+ 
+            div.x1equxi.x1jjtzf3.x6ikm8r.x10wlt62.xrvj5dj.xn2kgx5 + div {
+               width: auto !important;
+               height: auto !important;
+            }
+            div.x1equxi.x1jjtzf3.x6ikm8r.x10wlt62.xrvj5dj.xn2kgx5 {
+                width: auto !important;
+               height: auto !important;
+            }
+ 
+            div.xyqdw3p.x10ogl3i.xg8j3zb.x1k2j06m.x1equxi + div {
+               width: auto !important;
+            }
+            div.xyqdw3p.x10ogl3i.xg8j3zb.x1k2j06m.x1equxi {
+                width: auto !important;
+            }
+  
+            div._aml8 + div {
+                display: grid !important;
+                grid-template: repeat(2, 1fr)/repeat(2, 1fr) !important;
+                width: max-content !important;
+                height: auto !important;
+            }
+            div._aml8 {
+                display: grid !important;
+                grid-template: repeat(2, 1fr)/repeat(2, 1fr) !important;
+                width: max-content !important;
+                height: auto !important;
+            }
+
+            ._amlc {
+                padding: 7px !important;
+            }
+                
+            .x1k2j06m {
+                padding-left: 7px !important;
+            }
+ 
+            .x10ogl3i {
+                padding-right: 7px !important;
+            }
+ 
+            div._amk6._amlo._amlc._amld + div {
+               width: 97% !important;
+            }
+            div._amk6._amlo._amlc._amld {
+               width: 97% !important;
+            }
+ 
+            div._aml8._aml9 + div {
+               zoom: 46% !important;
+            }
+            div._aml8._aml9 {
+               zoom: 46% !important;
+            }
+ 
+            div.message-in.focusable-list-item._amjy._amjz._amjv._aotl._amjw._amj- + div {
+               width: 96.5% !important;
+            }
+            div.message-in.focusable-list-item._amjy._amjz._amjv._aotl._amjw._amj- {
+               width: 96.5% !important;
+            }
         }
     `;
 
@@ -394,135 +529,146 @@ let last_event_click = {};
 const RETRY_COUNT = 2;
 function list_item_event_listener() {
     document.addEventListener("click", function(event) {
-        const listItem = getNearestElement(event.target, 'div[role="listitem"]');
-        const button = getNearestElement(event.target, 'button[aria-disabled="false"][role="button"]');
+        const follow_button = event.target.closest('button.xjb2p0i.xk390pu.x1heor9g.x1ypdohk.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x9f619.xlwc9sh.x178xt8z.xm81vs4.xso031l.xy80clv.xiuubft.xa2vszz.xx5tys9.x5iuykv.x13fuv20.xu3j5b3.x1q0q8m5.x26u7qi.xfkn95n.xly138o.xchwasx.xfxlei4.xv52azi');
+        
+        if (follow_button) {
+            console.log("if !!!!!!!!!!!!!!!!!!!!follow_button!!!!!!!!!!!!!!!!!!!! ---- ", follow_button);
+            return;
+        }
+        else 
+        {
+            const listItem = getNearestElement(event.target, 'div[role="listitem"]');
+            const button = getNearestElement(event.target, 'button[aria-disabled="false"][role="button"]');
 
-        console.log("if !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ---- ", listItem, button);
-        if (listItem) {
-            console.log("listItem ======= ", listItem);
-            const matchingElement = listItem.querySelector('[aria-label]');
-            console.log("matchingElement ======= ", matchingElement);
-            if (matchingElement) {
-                const ariaLabel = matchingElement.getAttribute('aria-label');
-                console.log("matchingElement ======= ", matchingElement);
-                console.log("ariaLabel ======= ", ariaLabel);
-    
-                if (ariaLabel.includes("View all subgroups in") || ariaLabel.includes("Community:") || ariaLabel.includes("Create new community")) {
-                    console.log("Match found:", matchingElement);
-                    // Do something if the condition is met
-                    return;
-                }
-            }
-    
-            console.log("else!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            openChat(); // Uncomment if needed
-        } 
-        else if (button) {
-            const label = button.getAttribute("aria-label");           
-
-            const buttonActions = {
-                "Chats": () => {                    
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Chats"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Chats' button.");
-                    }
-                    console.log("Chats clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                },
-                "Status": () => {                       
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Status"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Status' button.");
-                    }
-                    console.log("Status clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                },
-                "Channels": () => {
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Channels"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Channels' button.");
-                    }
-                    console.log("Channels clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                },
-                "Communities": () => {
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Communities"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Communities' button.");
-                    }
-                    console.log("Communities clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                },
-                "Meta AI": () => {
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Meta AI"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Meta AI' button.");
-                    }
-                    console.log("Meta AI clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openChat();
-                },
-                "Settings": () => {
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Settings"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Settings' button.");
-                    }
-                    console.log("Settings clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                },
-                "Profile": () => {
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Profile"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'Profile' button.");
-                    }
-                    console.log("Profile clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                },
-                "BETA": () => {
-                    backToHome(label);
-
-                    const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="BETA"]');
-                    if (btn) {
-                        btn.dispatchEvent(new Event('click', { bubbles: true }));
-                        console.log("Triggered click event on 'BETA' button.");
-                    }
-                    console.log("BETA clicked ^^^^^^^^^^^^^^^^^^^^^^^");
-                    openUserList();
-                }
-            };
-    
-            if (buttonActions[label]) {
-                console.log(label, "!!!!!!!!!!! last_event_click!!!!!!!!!!!!", last_event_click[label]);
-                
-                if (last_event_click[label] === undefined || last_event_click[label] < RETRY_COUNT) {                    
-                    last_event_click[label] = (last_event_click[label] || 0) + 1; // Ensuring increment works properly
-                    buttonActions[label]();
-                }
-                else {
-                    last_event_click[label] = 0
-                }
-            }
+            console.log("if !!!!!!!!!!!!!!!!!!!!listItem!!!!!!!!!!!!!!!!!!!! ---- ", listItem);
+            console.log("if !!!!!!!!!!!!!!!!!!!!!!listItem!!!!!!!!!!!!!!!!!! ---- ", button);
             
+            if (listItem) {
+                console.log("listItem ======= ", listItem);
+                const matchingElement = listItem.querySelector('[aria-label]');
+                console.log("matchingElement ======= ", matchingElement);
+                if (matchingElement) {
+                    const ariaLabel = matchingElement.getAttribute('aria-label');
+                    console.log("matchingElement ======= ", matchingElement);
+                    console.log("ariaLabel ======= ", ariaLabel);
+        
+                    if (ariaLabel.includes("View all subgroups in") || ariaLabel.includes("Community:") || ariaLabel.includes("Create new community")) {
+                        console.log("Match found:", matchingElement);
+                        // Do something if the condition is met
+                        return;
+                    }
+                }
+        
+                console.log("else!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                openChat(); // Uncomment if needed
+            } 
+            else if (button) {
+                const label = button.getAttribute("aria-label");           
+
+                const buttonActions = {
+                    "Chats": () => {                    
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Chats"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Chats' button.");
+                        }
+                        console.log("Chats clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    },
+                    "Status": () => {                       
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Status"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Status' button.");
+                        }
+                        console.log("Status clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    },
+                    "Channels": () => {
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Channels"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Channels' button.");
+                        }
+                        console.log("Channels clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    },
+                    "Communities": () => {
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Communities"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Communities' button.");
+                        }
+                        console.log("Communities clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    },
+                    "Meta AI": () => {
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Meta AI"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Meta AI' button.");
+                        }
+                        console.log("Meta AI clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openChat();
+                    },
+                    "Settings": () => {
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Settings"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Settings' button.");
+                        }
+                        console.log("Settings clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    },
+                    "Profile": () => {
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="Profile"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'Profile' button.");
+                        }
+                        console.log("Profile clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    },
+                    "BETA": () => {
+                        backToHome(label);
+
+                        const btn = document.querySelector('button[aria-disabled="false"][role="button"][aria-label="BETA"]');
+                        if (btn) {
+                            btn.dispatchEvent(new Event('click', { bubbles: true }));
+                            console.log("Triggered click event on 'BETA' button.");
+                        }
+                        console.log("BETA clicked ^^^^^^^^^^^^^^^^^^^^^^^");
+                        openUserList();
+                    }
+                };
+        
+                if (buttonActions[label]) {
+                    console.log(label, "!!!!!!!!!!! last_event_click!!!!!!!!!!!!", last_event_click[label]);
+                    
+                    if (last_event_click[label] === undefined || last_event_click[label] < RETRY_COUNT) {                    
+                        last_event_click[label] = (last_event_click[label] || 0) + 1; // Ensuring increment works properly
+                        buttonActions[label]();
+                    }
+                    else {
+                        last_event_click[label] = 0
+                    }
+                }
+                
+            }
         }
     });
 
@@ -564,7 +710,14 @@ function openChat()
 {
     toggleMainDiv_chat(true)
     toggleMainDiv_list(false)
+    
     setTimeout(addBackButton, 50);
+    let count = 0;
+    const interval = setInterval(() => {
+        addBackButton();
+        count++;
+        if (count >= 5) clearInterval(interval); // Stop after 2 more calls
+    }, 1000); // Call every 300ms
 }
 
 function makeWhatsAppWebResponsive() {
