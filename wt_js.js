@@ -227,6 +227,13 @@ function apply_style_rule()
             div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.xl56j7k.x1q0g3np.x6s0dn4.xvy4d1p.xxk0z11.x1pg5gke.x117nqv4 {
                 padding: 0px !important;
             } 
+
+            div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.xl56j7k.x1q0g3np.x6s0dn4.xvy4d1p.xxk0z11 + div {
+                padding: 0px !important;
+            }
+            div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.xl56j7k.x1q0g3np.x6s0dn4.xvy4d1p.xxk0z11 {
+                padding: 0px !important;
+            } 
         }
     `;
 
@@ -250,14 +257,10 @@ function toggleMainDiv_chat(isRemoved_chat) {
         console.log("mainDiv_chat : ", mainDiv_chat)
         if (!isRemoved_chat) {
             // Remove the div
-            // mainDiv_chat.remove();
-            // isRemoved_chat = true;
             mainDiv_chat.style.setProperty('width', '0%', 'important');
             console.log('Div removed');
         } else {
             // Re-add the div
-            // parent_chat.insertBefore(mainDiv_chat, nextSibling_chat);
-            // isRemoved_chat = false;
             mainDiv_chat.style.setProperty('width', '100%', 'important');
             console.log('Div added back');
         }
@@ -367,17 +370,34 @@ function backToHome(label)
             clearInterval(interval);
             console.log("No new 'Back' or 'Close' buttons found. Stopping interval.");
         }
-    }, 1); // Runs every 1 second
+    }, 10); // Runs every 1 second
+}
+
+function getNearestElement(target, selector) {
+
+    // If not found inside, check the closest ancestor
+    closetTarget =  target.closest(selector);
+    if (closetTarget) {
+        return closetTarget;
+    }
+    else{
+     let innerListItem = target.querySelector(selector);
+     if (innerListItem) {
+         return innerListItem; // Return the inner one if found
+     }
+    }
+ 
+    return null;
 }
 
 let last_event_click = {};
 const RETRY_COUNT = 2;
 function list_item_event_listener() {
-
     document.addEventListener("click", function(event) {
-        const listItem = event.target.closest('div[role="listitem"]');
-        const button = event.target.closest('button[aria-disabled="false"][role="button"]');
-    
+        const listItem = getNearestElement(event.target, 'div[role="listitem"]');
+        const button = getNearestElement(event.target, 'button[aria-disabled="false"][role="button"]');
+
+        console.log("if !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ---- ", listItem, button);
         if (listItem) {
             console.log("listItem ======= ", listItem);
             const matchingElement = listItem.querySelector('[aria-label]');
@@ -394,7 +414,7 @@ function list_item_event_listener() {
                 }
             }
     
-            console.log("else");
+            console.log("else!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             openChat(); // Uncomment if needed
         } 
         else if (button) {
@@ -510,7 +530,7 @@ function list_item_event_listener() {
         const tooltip = document.querySelector('div[role="tooltip"]');
         if (tooltip) {
             tooltip.remove();
-            console.log("Tooltip removed.");
+            console.log("Tooltip removed.");            
         }
 
         let get_window_element = document.querySelector('div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.x1qughib.x1q0g3np.x6s0dn4.xz9dl7a.x1a8lsjc.x10l6tqk.x1ey2m1c.xoz0ns6.xh8yej3.x150wa6m.x178xt8z.x13fuv20.xyj1x25');;
@@ -525,6 +545,8 @@ function list_item_event_listener() {
                 el.remove();
             }
         });
+
+        makeWhatsAppWebResponsive()
     });
     
     observer.observe(document.body, { childList: true, subtree: true });
@@ -560,11 +582,17 @@ function makeWhatsAppWebResponsive() {
         mainContainer.style.padding = '10px';
         mainContainer.style.minHeight = '1000px';
     }
-     const Container = document.querySelector('.x120dzms');
+    const Container = document.querySelector('.x120dzms');
     if (Container) {           
         Container.style.padding = '10px';
     }
-     const container = document.querySelector('.xp9ttsr');
+    
+    const textFieldContainer = document.querySelector('.x1m258z3');
+    if (textFieldContainer) {           
+        textFieldContainer.style.width = 'auto';
+    }
+    
+    const container = document.querySelector('.xp9ttsr');
     if (container) {           
         container.style.minWidth = '300px';
     }
@@ -619,17 +647,6 @@ function makeWhatsAppWebResponsive() {
         downloadButton.style.fontSize = '14px';
     }
 
-    // Fix layout for screens smaller than 600px
-    if (window.innerWidth < 600) {
-        document.body.style.zoom = '1';
-        document.body.style.padding = '10px';
-
-        if (mainContainer) {
-            mainContainer.style.width = '100%';
-            mainContainer.style.maxWidth = '100%';
-        }
-    }
 }
-
 makeWhatsAppWebResponsive()
 list_item_event_listener()
